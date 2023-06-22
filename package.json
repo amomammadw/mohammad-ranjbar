@@ -16,6 +16,6 @@
     "nuxt-icon": "^0.4.1"
   },
   "dependencies": {
-    "@morev/vue-transitions": "^2.2.2"
+    "@morev/vue-transitions": "^2.3.6"
   }
 }
