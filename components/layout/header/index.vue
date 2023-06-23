@@ -11,7 +11,7 @@
         </span>
       </div>
 
-      <div class="lg:block hidden">
+      <div>
         <LayoutHeaderList :items="config.items" />
       </div>
     </nav>

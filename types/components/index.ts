@@ -1,5 +1,5 @@
 interface ILinkItem {
   link: string;
-  text: string;
+  text?: string;
   icon?: string;
 }
