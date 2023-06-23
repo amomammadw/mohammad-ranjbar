@@ -1,7 +1,5 @@
 <template>
-  <LayoutHeader />
-  <main class="container my-5">
+  <main>
     <NuxtPage />
   </main>
-  <LayoutFooter />
 </template>

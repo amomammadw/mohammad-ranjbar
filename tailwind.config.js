@@ -9,8 +9,8 @@ module.exports = {
   ],
   theme: {
     container: {
-      lg: "1200px",
       center: true,
+      lg: "800px",
     },
     extend: {},
   },
