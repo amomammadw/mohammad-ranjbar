@@ -1,7 +1,12 @@
+interface IImage {
+  src: string;
+  alt?: string;
+}
+
 interface ISectionBase {
   title: string;
   description: string;
-  image: string;
+  image: IImage;
 }
 
 type ITechStack = ILinkItem[];

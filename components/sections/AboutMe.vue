@@ -8,8 +8,11 @@
     </div>
 
     <div class="lg:col-span-1 col-span-full lg:order-2 order-1">
-      <img
-        :src="config.image"
+      <nuxt-img
+        :src="config.image.src"
+        width="300"
+        height="300"
+        :alt="config.image.alt"
         class="lg:rounded-xl rounded-full lg:w-[300px] lg:h-auto w-64 h-64 object-cover"
       />
     </div>

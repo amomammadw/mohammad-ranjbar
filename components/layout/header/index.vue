@@ -5,7 +5,7 @@
         <Icon name="mdi:code-tags" class="text-3xl" />
         <span class="font-medium">
           {{ config.title }}
-          <span class="text-blue-500 ml-2 lg:inline hidden">
+          <span class="text-blue-700 ml-2 lg:inline hidden">
             {{ config.slogan }}
           </span>
         </span>

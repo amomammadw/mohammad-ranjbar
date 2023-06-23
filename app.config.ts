@@ -5,9 +5,9 @@ export default defineAppConfig({
       title: "Mohammad Ranjbar",
       slogan: "Frontend Developer",
       items: [
-        { link: "#sec-1", text: "About Me" },
-        { link: "#sec-2", text: "Projects" },
-        { link: "#sec-3", text: "Contact" },
+        { link: "#about-me", text: "About Me" },
+        { link: "#projects", text: "Projects" },
+        { link: "#contact", text: "Contact" },
       ],
     },
 
@@ -16,7 +16,10 @@ export default defineAppConfig({
       title: "Hi There 👋",
       description:
         "My name is <b class='text-blue-500'>Mohammad</b>, a passionate Frontend Developer based in <b>Tehran, Iran</b> with <b>3+ years</b> of experience in Vuejs and Nuxt, also worked with react, nextjs and typescript and ready to start your projects :)",
-      image: "/img/me.jpg",
+      image: {
+        src: "/img/me.jpg",
+        alt: "Mohammad Ranjbar",
+      },
     },
 
     // * projects
