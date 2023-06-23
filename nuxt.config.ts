@@ -7,7 +7,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: "Nuxt Test Project",
+      title: "Mohammad Ranjbar",
     },
   },
 
