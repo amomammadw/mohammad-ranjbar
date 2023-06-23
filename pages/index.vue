@@ -1,5 +1,5 @@
 <template>
-  <div class="container">Index Page</div>
+  <SectionsAboutMe id="sec-1" />
 </template>
 
 <script setup></script>
