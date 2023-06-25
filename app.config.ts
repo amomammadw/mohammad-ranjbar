@@ -37,5 +37,15 @@ export default defineAppConfig({
           "Had a great experience creating a website and dashboards using Nuxt 3, Typescript, Tailwind and other tech stacks such as SASS and headlessui",
       },
     ],
+    skills: [
+      { src: "/svg/typescript.svg", alt: "Typescript" },
+      { src: "/svg/git.svg", alt: "Git" },
+      { src: "/svg/nuxt.svg", alt: "Nuxt" },
+      { src: "/svg/next.svg", alt: "Nextjs" },
+      { src: "/svg/vue.svg", alt: "Vuejs" },
+      { src: "/svg/react.svg", alt: "Reactjs" },
+      { src: "/svg/tailwind.svg", alt: "TailwindCSS" },
+      { src: "/svg/vuetify.svg", alt: "Vuetify" },
+    ],
   } as IConfig,
 });

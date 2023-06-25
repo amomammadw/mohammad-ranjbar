@@ -25,4 +25,5 @@ interface IConfig {
   header: IHeader;
   about: ISectionBase;
   projects: IProject[];
+  skills: IImage[];
 }

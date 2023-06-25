@@ -1,5 +1,6 @@
 <template>
-  <SectionsAboutMe id="sec-1" />
+  <SectionsAboutMe />
+  <SectionsSkillIcons />
 </template>
 
 <script setup></script>
