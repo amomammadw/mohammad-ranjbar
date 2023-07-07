@@ -48,6 +48,16 @@ export default defineNuxtConfig({
     },
     workbox: {
       navigateFallback: "/",
+      runtimeCaching: [
+        {
+          urlPattern: ({ url }) =>
+            url.pathname === "https://mohammad-ranjbar.vercel.app/",
+          handler: "CacheFirst",
+          options: {
+            cacheName: "route-cache",
+          },
+        },
+      ],
     },
     devOptions: {
       enabled: true,
