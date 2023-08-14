@@ -31,10 +31,21 @@ export default defineAppConfig({
     // * projects
     projects: [
       {
+        title: "AI Home Design",
+        link: "https://aihomedesign.com",
+        description:
+          "Had a great experience creating a website and dashboards using Nuxt 3, Typescript, Tailwind and other tech stacks such as SASS and headlessui",
+      },
+      {
         title: "Revivoto",
         link: "https://revivoto.com",
         description:
           "Had a great experience creating a website and dashboards using Nuxt 3, Typescript, Tailwind and other tech stacks such as SASS and headlessui",
+
+        image: {
+          src: "/img/revivoto.png",
+          alt: "Revivoto",
+        },
       },
     ],
     skills: [
