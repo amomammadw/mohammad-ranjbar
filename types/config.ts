@@ -13,6 +13,7 @@ type ITechStack = ILinkItem[];
 
 interface IProject extends ISectionBase {
   link?: string;
+  stack?: string[];
 }
 
 interface IHeader {

@@ -34,7 +34,8 @@ export default defineAppConfig({
         title: "AI Home Design",
         link: "https://aihomedesign.com",
         description:
-          "Had a great experience creating a website and dashboards using Nuxt 3, Typescript, Tailwind and other tech stacks such as SASS and headlessui",
+          "Had a delightful experience in creating a web application that integrates with a AI engine for redesigning houses.",
+        stack: ["Vuejs, Nuxtjs, Typescript, TailwindCSS, HeadlessUI"],
       },
       {
         title: "Revivoto",

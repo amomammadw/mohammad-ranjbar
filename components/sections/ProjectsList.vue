@@ -2,10 +2,10 @@
   <div class="mt-10 space-y-5">
     <template v-for="(projectItem, projectIndex) in projects">
       <div
-        class="bg-white shadow-md rounded max-w-3xl mx-auto p-5 grid lg:grid-cols-2 grid-cols-1 items-center"
+        class="bg-white shadow-md rounded mx-auto p-5 grid lg:grid-cols-2 grid-cols-1 items-center"
       >
         <div>
-          <h2 class="font-bold text-3xl text-blue-500">
+          <h2 class="font-bold text-3xl mb-5 text-blue-500">
             {{ projectItem.title }}
           </h2>
           <p>{{ projectItem.description }}</p>
