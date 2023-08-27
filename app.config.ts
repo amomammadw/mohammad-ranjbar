@@ -32,21 +32,44 @@ export default defineAppConfig({
     projects: [
       {
         title: "AI Home Design",
-        link: "https://aihomedesign.com",
+        link: "https://aihomedesign.webp",
         description:
           "Had a delightful experience in creating a web application that integrates with a AI engine for redesigning houses.",
-        stack: ["Vuejs, Nuxtjs, Typescript, TailwindCSS, HeadlessUI"],
+
+        image: {
+          src: "/img/aihomedesign.webp",
+          alt: "AIhomedesign",
+        },
+
+        stack: [
+          "Vuejs",
+          "Nuxtjs",
+          "Typescript",
+          "TailwindCSS",
+          "HeadlessUI",
+          "Pusherjs",
+        ],
       },
       {
         title: "Revivoto",
         link: "https://revivoto.com",
         description:
-          "Had a great experience creating a website and dashboards using Nuxt 3, Typescript, Tailwind and other tech stacks such as SASS and headlessui",
+          "Collaborated with an professional team to create a fully-featured website and user-dashboard to handle heavy processes and realtime connections using web sockets",
 
         image: {
-          src: "/img/revivoto.png",
+          src: "/img/revivoto.webp",
           alt: "Revivoto",
         },
+
+        stack: [
+          "Vuejs 3",
+          "Nuxtjs",
+          "Pinia",
+          "Typescript",
+          "TailwindCSS",
+          "HeadlessUI",
+          "Socket IO",
+        ],
       },
     ],
     skills: [
