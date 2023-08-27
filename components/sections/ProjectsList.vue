@@ -5,9 +5,9 @@
   <div class="mt-10 space-y-5">
     <template v-for="(projectItem, projectIndex) in projects">
       <div
-        class="bg-white shadow-lg rounded-lg mx-auto p-9 grid lg:grid-cols-2 grid-cols-1 gap-4"
+        class="bg-white shadow-lg rounded-lg mx-auto p-9 grid grid-cols-2 gap-4"
       >
-        <div>
+        <div class="lg:col-span-1 col-span-full order-2 lg:order-1">
           <NuxtLink
             :href="projectItem.link"
             target="_blank"
@@ -18,12 +18,18 @@
           <p class="my-5">{{ projectItem.description }}</p>
           <b>Tech Stack:</b>
           <ol class="list-disc ml-7">
-            <li v-for="(stackItem, stackIndex) in projectItem.stack">
+            <li
+              v-for="(stackItem, stackIndex) in projectItem.stack"
+              :key="stackIndex"
+            >
               {{ stackItem }}
             </li>
           </ol>
         </div>
-        <div v-if="projectItem.image">
+        <div
+          v-if="projectItem.image"
+          class="lg:col-span-1 col-span-full order-1 lg:order-2"
+        >
           <NuxtImg
             class="border rounded"
             :src="projectItem.image.src"

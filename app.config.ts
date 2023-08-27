@@ -37,7 +37,7 @@ export default defineAppConfig({
           "Had a delightful experience in creating a web application that integrates with a AI engine for redesigning houses.",
 
         image: {
-          src: "/img/aihomedesign.webp",
+          src: "/img/projects/aihomedesign.webp",
           alt: "AIhomedesign",
         },
 
@@ -57,7 +57,7 @@ export default defineAppConfig({
           "Collaborated with an professional team to create a fully-featured website and user-dashboard to handle heavy processes and realtime connections using web sockets",
 
         image: {
-          src: "/img/revivoto.webp",
+          src: "/img/projects/revivoto.webp",
           alt: "Revivoto",
         },
 
@@ -69,6 +69,26 @@ export default defineAppConfig({
           "TailwindCSS",
           "HeadlessUI",
           "Socket IO",
+        ],
+      },
+      {
+        title: "Trader4",
+        link: "https://github.com/traderfour/Trader4.net",
+        description:
+          "Had a great time working with a international team to create a great marketplace for traders",
+
+        image: {
+          src: "/img/projects/trader4.webp",
+          alt: "Trader Four",
+        },
+
+        stack: [
+          "Typescript",
+          "Nuxt",
+          "Pinia",
+          "i18n",
+          "TailwindCSS",
+          "Flowbite",
         ],
       },
     ],
