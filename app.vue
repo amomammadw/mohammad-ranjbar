@@ -1,7 +1,8 @@
 <template>
-  <VitePwaManifest />
-  <LayoutHeader />
-  <main class="container my-5 max-w-4xl">
-    <NuxtPage />
-  </main>
+    <div>
+        <MainHeader />
+        <UContainer class="py-5">
+            <NuxtPage />
+        </UContainer>
+    </div>
 </template>

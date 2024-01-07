@@ -1,19 +1,21 @@
 {
-  "name": "nuxt-app",
-  "private": true,
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "devDependencies": {
-    "@nuxt/image": "^1.0.0-rc.1",
-    "@nuxtjs/tailwindcss": "^6.8.0",
-    "@types/node": "^18",
-    "@vite-pwa/nuxt": "^0.1.0",
-    "nuxt": "^3.5.2",
-    "nuxt-icon": "^0.4.1"
-  }
+    "name": "mohammad-ranjbar",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare"
+    },
+    "devDependencies": {
+        "nuxt": "^3.9.0",
+        "vue": "^3.4.5",
+        "vue-router": "^4.2.5"
+    },
+    "dependencies": {
+        "@nuxt/content": "^2.10.0",
+        "@nuxt/ui": "^2.11.1"
+    }
 }
