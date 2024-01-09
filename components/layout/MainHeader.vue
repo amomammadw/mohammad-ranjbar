@@ -11,6 +11,16 @@
                 </ul>
 
                 <div class="space-x-3 items-center flex">
+                    <template v-for="socialItem in headerRightLinks" :key="socialItem">
+                        <UButton
+                            color="gray"
+                            variant="ghost"
+                            target="_blank"
+                            :to="socialItem.link"
+                            :icon="socialItem.icon"
+                            :aria-label="socialItem.text"
+                        />
+                    </template>
                     <ToggleTheme />
                 </div>
             </nav>
@@ -35,6 +45,24 @@ const navLinks = [
     {
         text: "Contact me",
         link: "#contact",
+    },
+];
+
+const headerRightLinks = [
+    {
+        icon: "i-mdi-linkedin",
+        link: "https://www.linkedin.com/in/mohammad-ranjbar-15408518b/",
+        text: "linkedin",
+    },
+    {
+        icon: "i-mdi-github",
+        link: "https://github.com/amomammadw82",
+        text: "github",
+    },
+    {
+        icon: "i-mdi-file-pdf-box",
+        link: "",
+        text: "resume",
     },
 ];
 </script>
