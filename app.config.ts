@@ -5,7 +5,7 @@ export default defineAppConfig({
             title: "Mohammad Ranjbar",
             slogan: "Frontend Developer",
             items: [
-                { link: "https://github.com/amomammadw82", icon: "mdi:github" },
+                { link: "https://github.com/amomammadw", icon: "mdi:github" },
                 {
                     link: "https://www.linkedin.com/in/mohammad-ranjbar-15408518b/",
                     icon: "mdi:linkedin",
