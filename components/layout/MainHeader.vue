@@ -1,11 +1,11 @@
 <template>
-    <header class="border-b py-5 border-b-slate-700">
+    <header class="border-b sticky top-0 py-5 border-b-slate-700">
         <UContainer>
             <nav class="flex justify-between">
                 <ul class="flex space-x-3 text-green-600">
                     <template v-for="linkItem in navLinks" :key="linkItem.link">
                         <li>
-                            <UButton variant="link" color="gray">{{ linkItem.text }}</UButton>
+                            <UButton variant="link" color="gray" :to="linkItem.link">{{ linkItem.text }}</UButton>
                         </li>
                     </template>
                 </ul>
@@ -46,6 +46,10 @@ const navLinks = [
         text: "Contact me",
         link: "#contact",
     },
+    {
+        text: "Blog",
+        link: "/",
+    },
 ];
 
 const headerRightLinks = [
@@ -56,7 +60,7 @@ const headerRightLinks = [
     },
     {
         icon: "i-mdi-github",
-        link: "https://github.com/amomammadw82",
+        link: "https://github.com/amomammadw",
         text: "github",
     },
     {
