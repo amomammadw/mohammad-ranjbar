@@ -1,14 +1,9 @@
 <template>
-    <div class="grid grid-cols-8 justify-items-center gap-4">
+    <div class="lg:grid flex lg:overflow-x-hidden overflow-x-auto grid-cols-8 justify-items-center gap-4">
         <template v-for="(iconItem, iconIndex) in skills">
-            <NuxtImg
-                width="70"
-                height="70"
-                loading="lazy"
-                :src="iconItem.src"
-                :alt="iconItem.alt"
-                class="lg:col-span-1 md:col-span-2 col-span-4"
-            />
+            <div class="dark:bg-gray-100 rounded-lg p-3 lg:w-auto min-w-[70px] lg:col-span-1 md:col-span-2 col-span-4">
+                <NuxtImg width="70" height="70" loading="lazy" :src="iconItem.src" :alt="iconItem.alt" />
+            </div>
         </template>
     </div>
 </template>

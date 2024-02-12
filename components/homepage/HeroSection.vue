@@ -1,6 +1,6 @@
 <template>
     <div class="grid xl:grid-cols-2 grid-cols-1 items-center">
-        <div class="space-y-3">
+        <div class="space-y-3 lg:order-1 order-2">
             <h3 class="xl:text-5xl text-3xl font-extrabold">Hi There 🚀</h3>
             <h1 class="xl:text-3xl text-2xl">I'm <b>Mohammad Ranjbar</b> 🖖</h1>
             <p>
@@ -35,8 +35,8 @@
         <div class="h-full">
             <ClientOnly>
                 <Vue3Lottie
-                    :height="400"
-                    :width="400"
+                    :height="300"
+                    :width="300"
                     animation-link="https://lottie.host/65ea9765-d1b2-4c91-a935-e1a7d597ff80/oejBJxFQoH.json"
                 />
             </ClientOnly>

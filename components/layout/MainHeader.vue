@@ -1,8 +1,8 @@
 <template>
-    <header class="border-b sticky top-0 py-5 border-b-slate-700">
+    <header class="w-full top-0 py-5 backdrop-blur-lg z-50" :class="showMobileMenu ? 'fixed' : 'sticky'">
         <UContainer>
             <nav class="flex justify-between">
-                <ul class="flex space-x-3 text-green-600">
+                <ul class="flex space-x-3 text-green-600" v-if="useDevice().isDesktop">
                     <template v-for="linkItem in navLinks" :key="linkItem.link">
                         <li>
                             <UButton variant="link" color="gray" :to="linkItem.link">{{ linkItem.text }}</UButton>
@@ -10,6 +10,7 @@
                     </template>
                 </ul>
 
+                <!-- * theme and social links -->
                 <div class="space-x-3 items-center flex">
                     <template v-for="socialItem in headerRightLinks" :key="socialItem">
                         <UButton
@@ -23,8 +24,17 @@
                     </template>
                     <ToggleTheme />
                 </div>
+
+                <UButton
+                    icon="i-mdi-menu"
+                    variant="ghost"
+                    v-if="useDevice().isMobile"
+                    @click="showMobileMenu = !showMobileMenu"
+                />
             </nav>
         </UContainer>
+
+        <div v-if="showMobileMenu" class="h-dvh w-full backdrop-blur-lg">Header</div>
     </header>
 </template>
 
@@ -51,6 +61,8 @@ const navLinks = [
         link: "/",
     },
 ];
+
+const showMobileMenu = ref(false);
 
 const headerRightLinks = [
     {
