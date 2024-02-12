@@ -26,7 +26,7 @@
                 </div>
 
                 <UButton
-                    icon="i-mdi-menu"
+                    :icon="showMobileMenu ? 'i-mdi-close' : 'i-mdi-menu'"
                     variant="ghost"
                     v-if="useDevice().isMobile"
                     @click="showMobileMenu = !showMobileMenu"
@@ -34,7 +34,7 @@
             </nav>
         </UContainer>
 
-        <div v-if="showMobileMenu" class="h-dvh w-full backdrop-blur-lg">Header</div>
+        <div v-if="showMobileMenu" class="h-dvh container w-full backdrop-blur-lg">Header Items</div>
     </header>
 </template>
 

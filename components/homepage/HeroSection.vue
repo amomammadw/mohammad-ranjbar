@@ -32,7 +32,7 @@
             </p>
         </div>
 
-        <div class="h-full">
+        <div class="h-full lg:order-2 order-1">
             <ClientOnly>
                 <Vue3Lottie
                     :height="300"
