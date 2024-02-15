@@ -32,14 +32,8 @@
             </p>
         </div>
 
-        <div class="h-full lg:order-2 order-1">
-            <ClientOnly>
-                <Vue3Lottie
-                    :height="300"
-                    :width="300"
-                    animation-link="https://lottie.host/65ea9765-d1b2-4c91-a935-e1a7d597ff80/oejBJxFQoH.json"
-                />
-            </ClientOnly>
+        <div class="h-full lg:order-2 order-1 justify-self-center">
+            <img width="300" height="300" src="/img/me.jpg" class="rounded-lg" />
         </div>
     </div>
 </template>

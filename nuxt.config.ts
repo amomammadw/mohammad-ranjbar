@@ -14,4 +14,19 @@ export default defineNuxtConfig({
             pathPrefix: false,
         },
     ],
+
+    app: {
+        head: {
+            title: "Mohammad Ranjbar - Frontend Developer",
+            htmlAttrs: {
+                lang: "en-US",
+            },
+            meta: [
+                {
+                    name: "description",
+                    content: "Mohammad Ranjbar Senior Frontend developer",
+                },
+            ],
+        },
+    },
 });
