@@ -2,7 +2,7 @@
     <header class="w-full top-0 py-5 backdrop-blur-lg z-50" :class="showMobileMenu ? 'fixed' : 'sticky'">
         <UContainer>
             <nav class="flex justify-between">
-                <ul class="flex space-x-3" v-if="useDevice().isDesktop">
+                <ul class="flex space-x-3">
                     <!-- <template v-for="linkItem in navLinks" :key="linkItem.link">
                         <li>
                             <UButton variant="link" color="gray" :to="linkItem.link">{{ linkItem.text }}</UButton>
@@ -11,9 +11,9 @@
 
                     <div class="flex items-center space-x-3">
                         <Icon name="mdi:code-tags" class="text-3xl" />
-                        <span class="font-medium">
+                        <span class="font-medium lg:text-xl text-sm">
                             Mohammad Ranjbar
-                            <span class="text-green-300 ml-2 lg:inline hidden"> Frontend Developer </span>
+                            <span class="text-green-300 text-sm ml-2 lg:inline hidden"> Frontend Developer </span>
                         </span>
                     </div>
                 </ul>
@@ -33,16 +33,16 @@
                     <ToggleTheme />
                 </div>
 
-                <UButton
+                <!-- <UButton
                     :icon="showMobileMenu ? 'i-mdi-close' : 'i-mdi-menu'"
                     variant="ghost"
                     v-if="useDevice().isMobile"
                     @click="showMobileMenu = !showMobileMenu"
-                />
+                /> -->
             </nav>
         </UContainer>
 
-        <div v-if="showMobileMenu" class="h-dvh container w-full backdrop-blur-lg">Header Items</div>
+        <!-- <div v-if="showMobileMenu" class="h-dvh container w-full backdrop-blur-lg">Header Items</div> -->
     </header>
 </template>
 
