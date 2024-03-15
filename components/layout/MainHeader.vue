@@ -1,14 +1,11 @@
 <template>
-    <header class="w-full top-0 py-5 backdrop-blur-lg z-50" :class="showMobileMenu ? 'fixed' : 'sticky'">
+    <header
+        class="w-full top-0 py-5 backdrop-blur-lg dark:bg-gray-800/40 z-50"
+        :class="showMobileMenu ? 'fixed' : 'sticky'"
+    >
         <UContainer>
             <nav class="flex justify-between">
                 <ul class="flex space-x-3">
-                    <!-- <template v-for="linkItem in navLinks" :key="linkItem.link">
-                        <li>
-                            <UButton variant="link" color="gray" :to="linkItem.link">{{ linkItem.text }}</UButton>
-                        </li>
-                    </template> -->
-
                     <div class="flex items-center space-x-3">
                         <Icon name="mdi:code-tags" class="text-3xl" />
                         <span class="font-medium lg:text-xl text-sm">
