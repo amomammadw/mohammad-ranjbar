@@ -1,32 +1,11 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    devtools: { enabled: true },
+  // https://github.com/nuxt-themes/alpine
+  extends: '@nuxt-themes/alpine',
 
-    modules: ["@nuxt/ui", "@nuxt/content", "@nuxtjs/device", "@nuxt/image"],
-
-    device: {
-        refreshOnResize: true,
-    },
-
-    components: [
-        {
-            path: "~/components",
-            pathPrefix: false,
-        },
-    ],
-
-    app: {
-        head: {
-            title: "Mohammad Ranjbar - Frontend Developer",
-            htmlAttrs: {
-                lang: "en-US",
-            },
-            meta: [
-                {
-                    name: "description",
-                    content: "Mohammad Ranjbar Senior Frontend developer",
-                },
-            ],
-        },
-    },
-});
+  modules: [
+    // https://github.com/nuxt-modules/plausible
+    '@nuxtjs/plausible',
+    // https://github.com/nuxt/devtools
+    '@nuxt/devtools'
+  ]
+})
