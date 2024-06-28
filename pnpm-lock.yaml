@@ -14,6 +14,9 @@ devDependencies:
   '@nuxt/eslint-config':
     specifier: ^0.2.0
     version: 0.2.0(eslint@8.57.0)
+  '@nuxt/ui-templates':
+    specifier: ^1.3.4
+    version: 1.3.4
   '@nuxtjs/plausible':
     specifier: ^0.2.4
     version: 0.2.4(rollup@3.29.4)
@@ -1628,6 +1631,10 @@ packages:
       - magicast
       - rollup
       - supports-color
+    dev: true
+
+  /@nuxt/ui-templates@1.3.4:
+    resolution: {integrity: sha512-zjuslnkj5zboZGis5QpmR5gvRTx5N8Ha/Rll+RRT8YZhXVNBincifhZ9apUQ9f6T0xJE8IHPyVyPx6WokomdYw==}
     dev: true
 
   /@nuxt/vite-builder@3.12.2(@types/node@20.14.9)(eslint@8.57.0)(rollup@3.29.4)(typescript@5.5.2)(vue@3.4.31):

@@ -13,6 +13,7 @@
     "@nuxt-themes/alpine": "latest",
     "@nuxt/devtools": "^1.3.7",
     "@nuxt/eslint-config": "^0.2.0",
+    "@nuxt/ui-templates": "^1.3.4",
     "@nuxtjs/plausible": "^0.2.4",
     "@types/node": "^20.14.9",
     "eslint": "^8.57.0",
