@@ -33,7 +33,7 @@
         </div>
 
         <div class="h-full lg:order-2 order-1 justify-self-center">
-            <img width="300" height="300" src="/img/me.jpg" class="rounded-lg" />
+            <NuxtImg fit="cover" placeholder width="400" height="400" src="/img/me.webp" class="rounded-lg" />
         </div>
     </div>
 </template>

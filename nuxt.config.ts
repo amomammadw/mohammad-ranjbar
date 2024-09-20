@@ -2,11 +2,7 @@
 export default defineNuxtConfig({
     devtools: { enabled: true },
 
-    modules: ["@nuxt/ui", "@nuxt/content", "@nuxtjs/device", "@nuxt/image"],
-
-    device: {
-        refreshOnResize: true,
-    },
+    modules: ["@nuxt/ui",  "@nuxtjs/device", "@nuxt/image"],
 
     components: [
         {
